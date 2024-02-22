@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <title>Methods 2024 - Problem - FizzBuzz - Cooper Senior</title>
+</head>
+<body>
+    <h1>Methods 2024 - Problem - FizzBuzz - Cooper Senior</h1>
+    <h2>Description</h2>
+    <p>
+    This function takes in an input n and prints the numbers from 1 to n.<br />
+    If the number is a multiple of 3, it prints 'Fizz' instead.<br />
+    If the number is a multiple of 5, it prints 'Buzz' instead.<br />
+    </p>
+    <h2>Instructions</h2>
+    <p>
+    To run this program I had to change the permissions of the script<br />
+    to allow execution by running 'chmod +x fizzbuzz.py'. To run this<br />
+    program navigate to the folder with the 'run.sh' script file and<br />
+    run './run.sh n' with 'n' being an integer. 
+
+    <h2>Example </h2>
+    Example output with n=17:
+    <pre>
+1
+2
+Fizz
+4
+Buzz
+Fizz
+7
+8
+Fizz
+Buzz
+11
+Fizz
+13
+14
+FizzBuzz
+16
+17
+    </pre>
+    </p>
+    <h2>Implementation </h2>
+    <p>
+        <pre>
+import sys
+
+def fizzBuzz(n):
+    for num in range(1, n + 1):
+        if num % 3 == 0:
+            print("Fizz", end="")
+        if num % 5 == 0:
+            print("Buzz", end="")
+        if num % 5 != 0 and num % 3 != 0:
+            print(str(num), end="")
+        print()
+
+if __name__ == "__main__":
+    if len(sys.argv) != 2:
+        print("haah")
+        sys.exit(1)
+    n = int(sys.argv[1])
+    fizzBuzz(n)
+        </pre>
+    </p>
+    <p>
+    Navigation
+    <ul>
+      <li><a href="../../index.html">Back</a></li>
+    </ul>
+    </p>
+</body>
+</html>
