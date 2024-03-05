@@ -1,8 +1,6 @@
 import sys
 
 inp = " ".join(sys.argv[1:])
-# print(inp)
-
 
 def isPalendrome(inp:str, lower:int, upper:int):
     while not inp[lower].isalnum():
