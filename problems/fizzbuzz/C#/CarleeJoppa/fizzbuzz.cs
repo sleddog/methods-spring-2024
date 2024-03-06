@@ -4,6 +4,7 @@ namespace FizzBuzz {
   class Program {
     static void Main(string[] args) {
         if(args.Length > 0){
+
             int num = Convert.ToInt32(args[0]);
             for(int i = 1; i <= num; i++){
                 if(i % 3 == 0){
