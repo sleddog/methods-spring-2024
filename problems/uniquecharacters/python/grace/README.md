@@ -1,0 +1,2 @@
+To run the shell script, you will need to run the command "./uniquecharacters.sh {string}" where {string} is your input.
+You may need to run the command "chmod +x uniquecharacters.sh" if the shell script doesn't run the first time.
