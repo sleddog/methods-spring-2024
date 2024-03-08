@@ -31,3 +31,8 @@ FizzBuzz
 16
 17
 ```
+
+To run test the program I created a test.sh file. To first run it I had to change the permissions of the script
+to allow execution by running `chmod +x test.py`. To run this
+program navigate to the folder with the 'test.sh' script file and
+run `./test.sh`. Testing this program is a intersting since it is a long string designed to be printed output. 
