@@ -19,5 +19,21 @@ This simple script checks if a provided string is a palindrome or not.
 5. Run the executable script by running the following command:
 
    ```bash
-   ./palindrome.sh
+   ./palindrome.sh <your palindrome>
    ```
+
+## Running the tests
+
+1. Download the `unitTest.py` and `runTest.sh` files into the same directory.
+
+2. Make sure to give the script execute permissions
+
+```bash
+chmod +x runTest.sh
+```
+
+3. You can run the unit tests for the palindrome check program by running the `runTest.sh` script:
+
+```bash
+./runTest.sh
+```

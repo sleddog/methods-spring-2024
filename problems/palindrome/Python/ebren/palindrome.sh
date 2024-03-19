@@ -1,13 +1,10 @@
 #!/bin/bash
 
-while true; do
-    read -p "Enter a string (type 'exit' to quit): " input
-    
-    if [ "$input" == "exit" ]; then
-        echo "Exiting program."
-        break
-    fi
+# Check if an argument was provided
+if [ $# -eq 0 ]; then
+    echo "No arguments provided"
+    exit 1
+fi
 
-    # Run the Python program with the provided argument
-    python3 "$(dirname "$0")/palindromeCheck.py" "$input"
-done
+# Run the Python program with the provided argument
+python3 "$(dirname "$0")/palindromeCheck.py" "$1"
