@@ -2,6 +2,6 @@
 
 userInput="$1"
 
-csc fizzbuzz.cs 
+csc .\FizzBuzzSolution\FizzBuzz\Program.cs
 
-./fizzbuzz.exe "$userInput"
+./Program.exe "$userInput"
