@@ -8,7 +8,7 @@ If the number is a multiple of 5, it prints 'Buzz' instead.
 To run this program I had to change the permissions of the script
 to allow execution by running `chmod +x fizzbuzz.py`. To run this
 program navigate to the folder with the 'run.sh' script file and
-run `./run.sh n` with 'n' being an integer. 
+run `./fizz.sh n` with 'n' being an integer. 
 
 ```
 Example output with n=17:
