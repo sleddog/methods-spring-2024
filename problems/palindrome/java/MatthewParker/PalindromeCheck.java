@@ -1,23 +1,23 @@
-public class PalindromeCheck {
+public abstract class PalindromeCheck {
     public static boolean isPalindrome(String text) 
     {
         String stringInput = text.replaceAll("[^A-za-z]+", "").toLowerCase(); //lowercases the input, special characters and spaces are gone
-        int length = stringInput.length(); //get length of modified string
-        int forward = 0; //iterate forward
-        int back = length - 1; //iterate backwards
+        
+        int i = 0, j = stringInput.length() - 1;
 
-        while(back > forward)
+        while(i < j)
         {
-            char forwardChar = stringInput.charAt(forward++); //first character in string 
-            char backChar = stringInput.charAt(back--); //last character in string
-
-            if(forwardChar != backChar)
+            if (stringInput.charAt(i) != stringInput.charAt(j))
             {
-                return false; //return false if characters in string dont match, therefore it's not a palindrome
+                return false;
             }
-            return true; //exit the loop and return true
+
+            i++;
+            j--;
         }
-        return true; //return value to make isPalindrome() work in main
+
+        return true;
+
     }
 
     public static void main(String[] args)
