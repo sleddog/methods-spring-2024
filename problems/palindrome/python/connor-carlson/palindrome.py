@@ -2,7 +2,7 @@ import sys
 
 inp = " ".join(sys.argv[1:])
 
-def isPalendrome(inp:str, lower:int, upper:int):
+def isPalindrome(inp:str, lower:int, upper:int):
     while not inp[lower].isalnum():
         lower += 1
     while not inp[upper].isalnum():
@@ -10,7 +10,7 @@ def isPalendrome(inp:str, lower:int, upper:int):
 
     if upper > lower:
         if inp[lower] == inp[upper]:
-            return isPalendrome(inp, lower+1, upper-1)
+            return isPalindrome(inp, lower+1, upper-1)
         else:
             return False
     else:
@@ -18,9 +18,10 @@ def isPalendrome(inp:str, lower:int, upper:int):
     
 def checkInput(inp:str):
     temp = inp.lower()
-    if isPalendrome(temp, 0, len(temp)-1):
+    if isPalindrome(temp, 0, len(temp)-1):
         print("\"%s\" is a paledrome!" % inp)
     else:
         print("\"%s\" is NOT a plendrome!" % inp)
 
-checkInput(inp)
+if __name__ == '__main__':
+    checkInput(inp)
