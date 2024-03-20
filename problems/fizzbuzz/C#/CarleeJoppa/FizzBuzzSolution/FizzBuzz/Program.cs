@@ -3,9 +3,6 @@
 namespace FizzBuzzSol {
   public class FizzBuzzProgram {
 
-    public static int NumbersYay(){
-        return 42;
-    }
     public static string[] FizzBuzz(int highest){
         string[] output = new string[highest];
         for(int i = 1; i <= highest; i++){
