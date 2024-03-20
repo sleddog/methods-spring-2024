@@ -13,7 +13,8 @@ def isPrime(checkMe):
 
 def main():
     #collect user input 
-    userNum = int(sys.argv[1])
+    userNum =  5
+    #int(sys.argv[1])
     #iterate all numbers that lead up to user input
     newNum = 0
     totalSum = 0
@@ -24,7 +25,7 @@ def main():
             totalSum = totalSum+newNum
         newNum = newNum+1
     #print the sum of primes
-    print("The sum of primes up to" , userNum , "is" , totalSum)
+    #print("The sum of primes up to" , userNum , "is" , totalSum)
     
 main()
 
