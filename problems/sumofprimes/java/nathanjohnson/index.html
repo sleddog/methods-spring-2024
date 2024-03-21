@@ -15,6 +15,21 @@
     <h2>Instructions</h2>
     <p>
         To use this function, run the following command "./run.sh". To change the maximum value for the sum of prime numbers, you must go into the run.sh file and edit the integer in "java Nathan-Johnson-sumOfPrimes.java <INTEGER HERE>".
+        
+        TEST UPDATE: The tests are a little more complicated. After many errors and exceptions, I was able to get them to work by putting them in the sumOfPrimes class itself (I know it's not the best syntax, but it's what worked). Included is a .jar file for the unit tests. After making test.sh executable (chmod +x test.sh), if you recieve errors regarding the unit test classes not being found, you may need to update the .jar file path in test.sh to the exact path on your cloned copy on your own computer. You may then run ./test.sh INTEGER HERE to run the file. The command ./test.sh 50 returns the following:
+        
+        OUTPUT BELOW:
+        The sum of prime numbers between 0 and 50 is 328
+        Test 10 passed
+        Test 50 passed
+        Test 100 passed
+        Exception in thread "main" java.lang.AssertionError: expected:<1060> but was:<1059>
+                at org.junit.Assert.fail(Assert.java:89)
+                at org.junit.Assert.failNotEquals(Assert.java:835)
+                at org.junit.Assert.assertEquals(Assert.java:647)
+                at org.junit.Assert.assertEquals(Assert.java:633)
+                at sumOfPrimes.failedTest100(sumOfPrimes.java:53)
+                at sumOfPrimes.main(sumOfPrimes.java:63)
     </p>
     <h2>Example</h2>
     <p>
