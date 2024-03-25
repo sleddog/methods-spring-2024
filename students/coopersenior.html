@@ -5,16 +5,80 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <title>Cooper Senior</title>
+    <style>
+        .box1 {
+            border-right: 2px dashed grey;
+            padding: 2em 2em;
+            max-width: 20em;
+        }
+        .box2 {
+            padding: 2em 3em;
+        }
+        .container {
+            border: 2px dashed grey;
+            margin-bottom: 20px;
+            display: flex;
+            flex-wrap: wrap;
+        }
+        div {
+            margin: 2px;
+        }
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: rgb(200, 226, 235);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .buttons, h2 {
+            text-align: center;
+        }
+        .btn {
+            display: inline-block;
+            width: 200px;
+            padding: 10px;
+            border-radius: 15px;
+            border: 2px solid white;
+            transition-duration: 0.4s;
+            color: white;
+            background-color: rgb(48, 48, 48);
+            border-color: white;
+            text-decoration: none;
+        }
+
+        .btn:hover {
+            background-color: rgb(122, 122, 122);
+        }
+    </style>
 </head>
 <body>
     <h1>Cooper Senior's Page</h1>
-    <ul>
-      <li>Content</li>
-    </ul>
-    <div>
-        <a href="./index.html">Back to Students</a> 
-        <br>
-        <a href="../index.html">Back to Main</a>
+    <div class="container">
+        <div class="box1">
+            <h2>About Me</h2>
+            <p>
+                I am a senior at Montana State University studying Computer Science. I am originally from Boulder, CO.
+            </p>
+        </div>
+        <div class="box2">
+            <h2>Hobbies</h2>
+            <ul>
+                <li>Hiking</li>
+                <li>Skiing</li>
+                <li>Rock Climbing</li>
+                <li>Running</li>
+            </ul>
+        </div>
+    </div> 
+    <div class="buttons">
+        <a class="btn" href="./index.html">
+            Back to Students
+        </a>
+    </div>
+    <div class="buttons">
+        <a class="btn" href="../index.html">
+            Back to Main
+        </a>
     </div>
 </body>
 </html>
