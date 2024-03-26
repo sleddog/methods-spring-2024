@@ -8,13 +8,19 @@
 /* Set a professional font */
 body {
   font-family: Arial, sans-serif;
+  background-color: rgb(171, 179, 183);
+  margin: 0;
+  padding: 0;
 }
 
 /* Add spacing and padding to elements */
 .container {
-  max-width: 1200px;
-  margin: 0 auto;
+  max-width: 800px;
+  margin: 20px auto;
   padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 h1, h2, h3 {
