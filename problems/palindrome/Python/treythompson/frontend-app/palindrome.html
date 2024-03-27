@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Palindrome Checker</title>
+</head>
+<body>
+    <h1>Palindrome Checker</h1>
+    <form id="palindromeForm">
+        <label for="inputString">Enter a string:</label><br>
+        <input type="text" id="inputString" name="inputString"><br><br>
+        <button type="submit">Check Palindrome</button>
+    </form>
+
+    <div id="result"></div>
+
+    <script>
+        document.getElementById('palindromeForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+            const formData = new FormData(this);
+            const inputValue = formData.get('inputString');
+
+            fetch('/isPalindrome', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify({ inputString: inputValue })
+            })
+            .then(response => response.json())
+            .then(data => {
+                document.getElementById('result').innerText = data.result;
+            })
+            .catch(error => console.error('Error:', error));
+        });
+    </script>
+</body>
+</html>
