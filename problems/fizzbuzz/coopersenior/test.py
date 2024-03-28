@@ -1,6 +1,6 @@
 import unittest
 
-from fizzbuzz import fizzBuzz
+from fizzbuzz import getValue
 
 
 class TestFizzBuzz(unittest.TestCase):
@@ -9,24 +9,24 @@ class TestFizzBuzz(unittest.TestCase):
         Test that correct string output is printed for 3
         """
         num = 3
-        result = fizzBuzz(num)
-        self.assertEqual(result, "1\n2\nFizz")
+        result = getValue(num)
+        self.assertEqual(result, "Fizz")
 
     def test_5(self):
         """
         Test that correct string output is printed for 5
         """
         num = 5
-        result = fizzBuzz(num)
-        self.assertEqual(result, "1\n2\nFizz\n4\nBuzz")
+        result = getValue(num)
+        self.assertEqual(result, "Buzz")
 
     def test_15(self):
         """
         Test that correct string output is printed for 15
         """
         num = 15
-        result = fizzBuzz(num)
-        self.assertEqual(result, "1\n2\nFizz\n4\nBuzz\nFizz\n7\n8\nFizz\nBuzz\n11\nFizz\n13\n14\nFizzBuzz")
+        result = getValue(num)
+        self.assertEqual(result, "FizzBuzz")
         
 if __name__ == '__main__':
     unittest.main()

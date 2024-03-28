@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FizzBuzz App</title>
+</head>
+<body>
+    <h1>FizzBuzz App</h1>
+    <p>Print the FizzBuzz output.</p>
+    <form action="/fizzbuzz_app" method="POST">
+        <label for="number">Enter a number:</label>
+        <input type="number" id="number" name="number" value="{{ number }}" />
+        <button type="submit">Submit</button>
+    </form>
+    <div id="fizzbuzz-result" {% if not result %} style="display: none;"{% endif %}>
+        {% if result %}
+            <pre>{{ result }}</pre>
+        {% endif %}
+    </div>
+</body>
+</html>

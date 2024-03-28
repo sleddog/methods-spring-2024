@@ -36,3 +36,7 @@ To run the test program I created a test.sh file. To first run it I had to chang
 to allow execution by running `chmod +x test.py`. To run this
 program navigate to the folder with the 'test.sh' script file and
 run `./test.sh`. Testing this program is a intersting since it is a long string designed to be printed output. 
+
+To run the front end web app navigate to the folder containing 'fizzbuzz.py'. Run 'python3 fizzbuzz.py' and 
+make sure that flask is installed. To install flask I had to run 'pip3 install flask' on my mac. Once the 
+server starts running go to the port it is running on to interact with the app. 
