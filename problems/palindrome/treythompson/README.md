@@ -7,3 +7,6 @@ The Python script runPalindromeCheck.py contains the logic for determining wheth
 To run the script, execute it from the command line with the string you want to check as an argument.
 
 There is a unit test for the palindrome function. The tests will ensure that the palindrome function returns the correct result and when it returns an argument error.
+
+NodeJS documentation for assignment 6:
+The web app is a simple NodeJS application that hosts a web server that can be used to run a palindrome checker in an HTML document that will communicate with the app.js backend. This will call the palindrome function in the palindrome.py file and return whether the text is a palindrome or not.
