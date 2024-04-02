@@ -1,5 +1,6 @@
 <!doctype html>
 <html lang="en">
+<script src="https://unpkg.com/htmx.org@1.9.11" integrity="sha384-0gxUXCCR8yv9FM2b+U3FDbsKthCI66oH5IA9fHppQq9DDMHuMauqq1ZHBpJxQ0J0" crossorigin="anonymous"></script>
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,6 +11,15 @@
     <h1>FizzBuzz Problem - Matthew Rolls</h1>
     <h2>Solution</h2>
     <p><a href="fzbz-mr.cpp">My FizzBuzz Solution</a></p>
+    <h4>Calculate FizzBuzz:</h4>
+    <form>
+        <label>Enter a number:</label>
+        <input type="text" name="number">
+        <button hx-post="number" hx-target="">
+            Submit
+        </button>
+    </form>
+    
     <h2>Description</h2>
     <p>
     This program takes in an input number greater than 0 from the user and then prints all numbers from 1 to the input number with 3 exceptions.<br/>
