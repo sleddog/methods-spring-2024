@@ -4,3 +4,13 @@ __pycache__/
 *.pyc
 
 obj/
+
+problems/fizzbuzz/C#/CarleeJoppa/FizzBuzzSolution/FizzBuzz/obj/Debug/net8.0/FizzBuzz.AssemblyInfo.cs
+problems/fizzbuzz/C#/CarleeJoppa/FizzBuzzSolution/FizzBuzz/obj/Debug/net8.0/FizzBuzz.AssemblyInfoInputs.cache
+problems/fizzbuzz/C#/CarleeJoppa/FizzBuzzSolution/FizzBuzz/obj/Debug/net8.0/FizzBuzz.assets.cache
+problems/fizzbuzz/C#/CarleeJoppa/FizzBuzzSolution/FizzBuzz/obj/Debug/net8.0/FizzBuzz.GeneratedMSBuildEditorConfig.editorconfig
+problems/fizzbuzz/C#/CarleeJoppa/FizzBuzzSolution/FizzBuzzTest/obj/Debug/net8.0/FizzBuzzTest.AssemblyInfo.cs
+problems/fizzbuzz/C#/CarleeJoppa/FizzBuzzSolution/FizzBuzzTest/obj/Debug/net8.0/FizzBuzzTest.AssemblyInfoInputs.cache
+problems/fizzbuzz/C#/CarleeJoppa/FizzBuzzSolution/FizzBuzzTest/obj/Debug/net8.0/FizzBuzzTest.assets.cache
+problems/fizzbuzz/C#/CarleeJoppa/FizzBuzzSolution/FizzBuzzTest/obj/Debug/net8.0/FizzBuzzTest.csproj.AssemblyReference.cache
+problems/fizzbuzz/C#/CarleeJoppa/FizzBuzzSolution/FizzBuzzTest/obj/Debug/net8.0/FizzBuzzTest.GeneratedMSBuildEditorConfig.editorconfig
