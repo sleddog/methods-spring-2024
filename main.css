@@ -15,7 +15,7 @@ body {
 
 /* Add spacing and padding to elements */
 .container {
-  max-width: 800px;
+  max-width: 90%;
   margin: 20px auto;
   padding: 20px;
   background-color: #fff;
@@ -27,13 +27,61 @@ h1, h2, h3 {
   margin-bottom: 10px;
 }
 
-p {
+p, ul, li {
   margin-bottom: 20px;
 }
 
-/* Responsive design */
+/* Apply hover effect to text elements */
+.container h1:hover,
+.container p:hover,
+.container li:hover {
+  color: #007bff; /* Change color on hover */
+}
+
+/* Special hover effect for links */
+.container a:hover {
+  color: #0056b3; /* Darker blue for links on hover */
+  text-decoration: underline; /* Underline links on hover */
+}
+
+/* Styles for form elements */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+input[type="number"],
+input[type="text"],
+button {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+button {
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+button:hover {
+  background-color: #0056b3;
+  color: #ffffff; /* Ensure text color remains white on hover */
+}
+
+label {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+/* Responsive design adjustments */
 @media screen and (max-width: 768px) {
   .container {
     padding: 10px;
   }
 }
+
+
