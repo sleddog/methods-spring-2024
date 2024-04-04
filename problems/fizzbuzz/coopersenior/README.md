@@ -33,6 +33,6 @@ FizzBuzz
 To run this program navigate to the folder with the 'test.sh' script file and
 run `./test.sh`.  
 
-To run the front end web app navigate to the folder containing 'fizzbuzz.py'. Run 'python3 backend.py' and 
+To run the front end web app navigate to the folder containing 'backend.py'. Run 'python3 backend.py' and 
 make sure that flask is installed. To install flask I had to run 'pip3 install flask' on my mac. Once the 
 server starts running go to the port it is running on to interact with the app. 
