@@ -5,10 +5,8 @@ This function takes in an input n and prints the numbers from 1 to n.
 If the number is a multiple of 3, it prints 'Fizz' instead.
 If the number is a multiple of 5, it prints 'Buzz' instead.
 
-To run this program I had to change the permissions of the script
-to allow execution by running `chmod +x fizzbuzz.py`. To run this
-program navigate to the folder with the 'run.sh' script file and
-run `./run.sh n` with 'n' being an integer. 
+To run this program navigate to the folder with the 'run.sh' 
+script file and run `./run.sh n` with 'n' being an integer. 
 
 ```
 Example output with n=17:
@@ -32,11 +30,9 @@ FizzBuzz
 17
 ```
 
-To run the test program I created a test.sh file. To first run it I had to change the permissions of the script
-to allow execution by running `chmod +x test.py`. To run this
-program navigate to the folder with the 'test.sh' script file and
-run `./test.sh`. Testing this program is a intersting since it is a long string designed to be printed output. 
+To run this program navigate to the folder with the 'test.sh' script file and
+run `./test.sh`.  
 
-To run the front end web app navigate to the folder containing 'fizzbuzz.py'. Run 'python3 fizzbuzz.py' and 
+To run the front end web app navigate to the folder containing 'fizzbuzz.py'. Run 'python3 backend.py' and 
 make sure that flask is installed. To install flask I had to run 'pip3 install flask' on my mac. Once the 
 server starts running go to the port it is running on to interact with the app. 
