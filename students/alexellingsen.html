@@ -5,11 +5,68 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <title>Alex Ellingsen</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            background-color: aliceblue;
+        }
+
+        #heading {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100px;
+            background-color: #77DD77;
+            border-radius: 30px;
+        }
+
+        #body-text {
+            font-size: large;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+        #nav-row {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: larger;
+        }
+
+        #nav-row a {
+            margin: 10px;
+            padding:10px;
+            border: solid #189AB4;
+            background-color: #189AB4;
+            border-radius: 15px;
+            color:aliceblue;
+            text-decoration: none; 
+        }
+
+        #nav-row a:hover {
+            text-decoration: underline;
+        }
+
+    </style>
 </head>
 <body>
-    <h1>Alex Ellingsen's Page</h1>
-    <p>Nothing here yet...</p>
+    <div id="heading">
+        <h1>Alex Ellingsen's Page</h1>
+    </div>
     
-    <a href="../index.html">Back to Main</a>
+    <div id="body-text">
+        <p>Hi there! I'm Alex Ellingsen, a Sophomore Computer Science and Data Science major here at Montana State.
+            I'm originally from Spokane, Washington. When I'm not in school, I love hiking, skiing, and basically
+            anything else that will get me outdoors.
+        </p>
+    </div>
+    
+    <div id="nav-row">
+        <a href="../index.html">Back to Main</a>
+        <a href="./index.html">Back to Students</a>
+    </div>
+    
 </body>
 </html>
