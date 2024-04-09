@@ -7,3 +7,6 @@ You may need to run the command "chmod +x uniquecharacters.sh" if the shell scri
 
 ###Unit Testing
 To perform unit tests, run the command "./unitTest.sh". This will run 4 tests that confirms the program can function in various scenarios.
+
+###HTML Form
+Make sure you are in a enviroment that can run PHP scripts (i.e. apache localhost) to see the results.
