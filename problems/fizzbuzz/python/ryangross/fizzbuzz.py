@@ -41,6 +41,7 @@ def fizzbuzz(n):
         # val is for testing 
 
 if __name__ == "__main__":
+    app.run()
     if len(sys.argv) != 2:
         sys.exit(1)
 
