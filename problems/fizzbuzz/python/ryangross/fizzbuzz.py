@@ -1,12 +1,8 @@
 import sys
-from flask import Flask, request, render_template_string
-
-app = Flask(__name__)
 
 
-@app.route('/fizzbuzz.py', methods=['GET'])
+
 def fizzbuzz(n):
-    number = int(request.args.get('number'))
     result = ""
     val = "0"
     for i in range(1, n + 1):
@@ -35,13 +31,11 @@ def fizzbuzz(n):
             # return val
     
     # print(val)
-    # return val
-    return render_template_string("{{ result }}", result=result), val
+    return val, result
     
         # val is for testing 
 
 if __name__ == "__main__":
-    app.run()
     if len(sys.argv) != 2:
         sys.exit(1)
 

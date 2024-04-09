@@ -10,11 +10,18 @@
     <h1>Ryan Gross - Solution - python - FizzBuzz</h1>
     
     <h3>FizzBuzz Form</h3>
-    <form action="/fizzbuzz.py" method="GET"> 
+    <form action="/backend.py" method="POST"> 
         <label for="fbnum">Enter an Integer:</label><br>
-        <input type="number" id="fbnum" name="number"><br>
+        <input type="number" id="fbnum" name="number" value="{{ number }}"><br>
         <input type="submit" value="FizzBuzz it">
     </form>
+    <br>
+    <div id="fizzbuzz-result" {% if not result %} style="display: none;"{% endif %}>
+        {% if result %}
+            <pre>{{ result }}</pre>
+        {% endif %}
+    </div>
+
 
     <br>
     <p>How to run from command line:
