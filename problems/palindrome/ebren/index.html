@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Palindrome Checker Script</title>
+    <style>
+        body {
+            background: linear-gradient(to right, #FF6B6B, #556270);
+            font-family: Arial, sans-serif;
+            color: #333;
+            padding: 20px;
+            margin: 0;
+            list-style: none;
+        }
+
+        h1, h2 {
+            color: #fff;
+            text-align: center;
+        }
+        p {
+            text-align: center;
+            color: #fff;
+        }
+        form {
+            background: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            max-width: 400px;
+            margin: 0 auto;
+        }
+        input[type="text"] {
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            width: 90%;
+            margin-bottom: 10px;
+        }
+        input[type="submit"] {
+            padding: 10px 20px;
+            border-radius: 5px;
+            border: none;
+            color: #fff;
+            background-color: #333;
+            cursor: pointer;
+            width: 100%;
+            transition: background-color 0.3s ease;
+        }
+        input[type="submit"]:hover {
+            background-color: #444;
+        }
+        pre {
+            background: #f0f0f0;
+            padding: 10px;
+            border-radius: 5px;
+            white-space: pre-wrap;
+            overflow-x: auto;
+            max-width: 100%;
+        }
+        ol {
+            max-width: 600px;
+            margin: 0 auto;
+            padding-left: 20px;
+            color: #fff;
+        }
+        a {
+            color: yellow;
+        }
+    </style>
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+</head>
+<body>
+    <h1>Methods-2024 - Palindrome Checker - Yabets Ebren</h1>
+    <p>This simple script checks if a provided string is a palindrome or not.</p>
+
+    <form id="palindrome-form" action="/check-palindrome" method="POST">
+        <label for="palindrome">Enter a string:</label><br>
+        <input type="text" id="palindrome" name="palindrome"><br><br>
+        <input type="submit" value="Check">
+    </form>
+    <p id="result" style="font-weight: bold; font-size: 20px;"></p>
+
+
+    <h2>To Run Locally</h2>
+    <ol>
+        <li>Make sure you have Python 3 installed on your system.</li>
+        <li>Download the <a href="../backend/palindromeCheck.py"> palindromeCheck.py </a> and <a href="../backend/palindrome.sh">palindrome.sh</a> files into the same directory.</li>
+        <li>Open a terminal and navigate to the directory where the files are located.</li>
+        <li>Make the shell script executable by running the following command:
+            <pre><code style="color: #333;">chmod +x palindrome.sh</code></pre>
+        </li>
+        <li>Run the executable</li>
+    </ol>
+<script>
+    document.getElementById('palindrome-form').addEventListener('submit', function(event) {
+    event.preventDefault();
+    var palindrome = document.getElementById('palindrome').value;
+    axios.post("/check-palindrome", {
+        palindrome: palindrome
+    })
+    .then(function (response) {
+        try {
+            var responseDataString = response.data.toString();
+            if(responseDataString === "true"){
+                document.getElementById('result').innerText = palindrome + " is a palindrome";
+            } else if(responseDataString === "false"){
+                document.getElementById('result').innerText = palindrome + " is not a palindrome";
+            } else {
+                console.log("Unexpected response:", responseDataString);
+            }
+        } catch (error) {
+            console.log("Error:", error);
+        }
+    })
+    .catch(function (error) {
+        console.log("Error during request:", error);
+    });
+});
+    </script>
+</html>

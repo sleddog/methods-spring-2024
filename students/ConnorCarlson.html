@@ -5,18 +5,116 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="description" content="">
         <title>Connor Carlson</title>
+        <style>
+            header {
+                top: 0;
+                position: fixed;
+                width: 100%;
+                height: 80px;
+                text-align: center;
+                vertical-align: middle;
+                background-color: royalblue;
+                color: gold;
+            }
+            body {
+                background-color: lightcyan;
+                margin: 0;
+                font-family: Arial, Helvetica, sans-serif;
+            }
+            footer {
+                position:fixed;
+                bottom: 0px;
+                margin-top: 20px;
+                padding: 20px;
+                width: 100%;
+                color: gold;
+                background-color: royalblue;
+            }
+            .NavBar {
+                background-color: navy;
+                position: sticky;
+                top: 80px;
+            }
+            nav ul {
+                padding: 0px;
+                position: relative;
+                font-size: 20px;
+                text-align: center;
+            }
+            nav ul li {
+                display: inline-block;
+                color: gold;
+            }
+            nav ul li:hover {
+                color: yellow;
+                cursor: pointer;
+                box-shadow: inset 0 0 25px rgba(255,255,255,.25);
+                transition: all .2s linear;
+            }
+            nav ul li a {
+                text-decoration: none;
+                padding: 10px 35px;
+                display: inline-block;
+                color: inherit;
+            }
+            .container {
+                z-index: -1;
+                position: sticky;
+                margin: 0px auto;
+                margin-top: 80px;
+                margin-bottom: 60px;
+                padding: 1em 3%;
+                max-width: 900px;
+                height: 100%;
+                background-color: white;
+                border: 2px solid black;
+                border-color: black;
+                border-radius:5px;
+                
+            }
+        </style>
     </head>
     <body>
-        <h1>Connor Carlson's Page</h1>
-        <h2><u>Basic Info:</u></h2>
-        <p>
-            I am a Senior in Computer Science. I am from Bremerton Washington and moved here to Bozeman in 2017.
-            I like movies, video games, hiking, and just learning and experiencing new things. Planning on this
-            being my last semester and after graduation I plan to stick around here in Bozeman and work for a
-            while. I would like to move somewhere else eventually but not sure where, so I want to do some
-            traveling and exploring first.
-        </p>
-        <a href="../index.html">Back to Main</a>
+        <header>
+            <h1>Connor Carlson's Page</h1>
+        </header>
+        <div class="NavBar">
+            <nav>
+                <ul>
+                    <li><a href="../index.html">Main</a></li>
+                    <li><a href="./index.html">Students</a></li>
+                    <li><a href="../topics/index.html">Topics</a></li>
+                    <li><a href="../problems/index.html">Problems</a></li>
+                    <li><a href="https://github.com/sleddog/methods-spring-2024" target="_blank">Gitub Repo</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="container">
+            <h2>Bio:</h2>
+            <p>
+                I am a Senior in Computer Science. I am from Bremerton Washington and moved here to Bozeman in 2017.
+                I like movies, video games, hiking, and just learning and experiencing new Planning on this
+                being my last semester and after graduation I plan to stick around here in Bozeman and work for a
+                while. I would like to move somewhere else eventually but not sure where, so I want to do some
+                traveling and exploring first.
+
+            </p>
+            <h2>Likes:</h2>
+            <ul>
+                <li>Dogs</li>
+                <li>Movies</li>
+                <li>Hiking</li>
+                <li>Traveling</li>
+                <li>Photgraphy</li>
+            </ul>
+            <h2>Dislikes:</h2>
+            <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+            </ul>
+        </div>
+        <footer>
+        </footer>
     </body>
 </html>
 
