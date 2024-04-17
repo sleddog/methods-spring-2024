@@ -20,4 +20,4 @@ if __name__ == "__main__":
         print("missing command line arg")
         sys.exit(1)
     n = int(sys.argv[1])
-    fizzbuzz(n)
+    print(fizzbuzz(n))
