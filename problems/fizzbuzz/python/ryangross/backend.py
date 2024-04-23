@@ -7,15 +7,18 @@ app = Flask(__name__)
 def index():
     return render_template('index.html')
 
-@app.route('/index', methods=['POST'])
+@app.route('/index', methods=['GET', 'POST'])
 def fizz_buzz_app():
-    number_str = request.form.get('number')
-    if number_str and number_str.isdigit():  # make sure its not empty and valid number
-        n = int(number_str)
-        result = numbers(n)
+    if request.method == 'POST':
+        number_str = request.form.get('number')
+        if number_str and number_str.isdigit():  # make sure its not empty and valid number
+            n = int(number_str)
+            result = numbers(n)
+        else:
+            result = "Please enter a valid number."
+        return render_template('index.html', result=result, number=number_str)
     else:
-        result = "Please enter a valid number."
-    return render_template('index.html', result=result, number=number_str)
+        return render_template('index.html')
 
 def numbers(n):
     result = fb.fizzbuzz(n)[1]
