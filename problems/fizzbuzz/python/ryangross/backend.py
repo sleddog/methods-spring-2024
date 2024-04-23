@@ -2,12 +2,6 @@ from flask import Flask, request, render_template_string, render_template
 import fizzbuzz as fb
 app = Flask(__name__)
 
-# @app.route('/index', methods=['GET', 'POST'])
-# def wbapp():
-#     if request.method == 'POST':
-#         number = int(request.form['number'])
-#         result = fb.fizzBuzz(number)[1]
-#         return render_template_string("{{ result }}", result=result)
 
 @app.route('/')
 def index():
@@ -21,10 +15,10 @@ def fizz_buzz_app():
         result = numbers(n)
     else:
         result = "Please enter a valid number."
-    return render_template('fizzbuzz_app.html', result=result, number=number_str)
+    return render_template('index.html', result=result, number=number_str)
 
 def numbers(n):
-    result = fb.fizzbuzz(n)
+    result = fb.fizzbuzz(n)[1]
     return ''.join(map(str, result)) 
 
 
