@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Prime Sum Calculator</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body>
+    <h2>Nathan Johnson Sum of Primes Server</h2>
+    <text>Input an integer below to find the sum of prime numbers between 0 and the integer entered.</text>
+    <form id="primeSumForm">
+        <input type="text" id="textBox" name="textBox">
+        <input type="submit" value="Calculate">
+    </form>
+    <div id="result"></div>
+
+    <script>
+        $(document).ready(function(){
+            $('#primeSumForm').submit(function(e){
+                e.preventDefault(); // Prevent default form submission
+
+                // Get the value from the input field
+                var inputNumber = $('#textBox').val();
+
+                // Send AJAX request to the backend
+                $.ajax({
+                    type: 'POST',
+                    url: '/primeSumOutput',
+                    data: {textBox: inputNumber},
+                    success: function(response){
+                        // Update the result div with the response from the backend
+                        $('#result').text(response);
+                    },
+                    error: function(){
+                        $('#result').text('An error occurred while processing your request.');
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>
