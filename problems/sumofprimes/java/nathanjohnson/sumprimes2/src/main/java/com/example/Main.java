@@ -1,8 +1,6 @@
 package com.example;
 import java.io.File;
 
-//import io.jooby.Jooby;
-//import io.jooby.ServerOptions;
 import io.jooby.Jooby;
 import io.jooby.ServerOptions;
 
