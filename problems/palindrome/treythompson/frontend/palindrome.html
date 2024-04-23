@@ -7,13 +7,17 @@
 </head>
 <body>
     <h1>Palindrome Checker</h1>
-    <form id="palindromeForm" action="/isPalindrome" method="POST"> <!-- Update the form action -->
+    <form id="palindromeForm" action="/isPalindrome" method="POST">
         <label for="inputString">Enter a string:</label><br>
         <input type="text" id="inputString" name="inputString"><br><br>
         <button type="submit">Check Palindrome</button>
     </form>
 
     <div id="result"></div>
+
+    <ul>
+        <li><a href="../index.html">Back</a></li>
+    </ul>
 
     <script>
         document.getElementById('palindromeForm').addEventListener('submit', function(event) {

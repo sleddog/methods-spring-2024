@@ -1,5 +1,10 @@
 body {
   font-family: Arial, Helvetica, sans-serif;
+  background: url('https://images.pexels.com/photos/950241/pexels-photo-950241.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2');
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+
 }
 table {
     width: 20%;
