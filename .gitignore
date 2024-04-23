@@ -2,3 +2,8 @@
 
 __pycache__/
 *.pyc
+
+node_modules/
+
+obj/
+.DS_Store

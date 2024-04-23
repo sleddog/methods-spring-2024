@@ -5,12 +5,106 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <title>Ben Sampson</title>
+    <style>
+        .box1 {
+            border-right: 2px dashed grey;
+            padding: 2em 2em;
+            max-width: 20em;
+        }
+        .box2 {
+            padding: 2em 3em;
+        }
+        .container {
+            border: 2px dashed grey;
+            margin-bottom: 20px;
+            display: flex;
+            flex-wrap: wrap;
+        }
+        div {
+            margin: 2px;
+        }
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            /* background-color: rgb(1, 41, 10); */
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .buttons, h2 {
+            text-align: center;
+        }
+        .btn {
+            display: inline-block;
+            width: 200px;
+            padding: 10px;
+            border-radius: 15px;
+            border: 2px solid white;
+            transition-duration: 0.4s;
+            color: white;
+            background-color: rgb(48, 48, 48);
+            border-color: white;
+            text-decoration: none;
+        }
+
+        .btn:hover {
+            background-color: rgb(122, 122, 122);
+        }
+
+        .topnav {
+            background-color: #373838;
+            overflow: hidden;
+        }
+
+        /* Style the links inside the navigation bar */
+        .topnav a {
+            float: left;
+            color: #f2f2f2;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: 17px;
+        }
+
+        /* Change the color of links on hover */
+        .topnav a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+
+        /* Add a color to the active/current link */
+        .topnav a.active {
+            background-color: #01460f;
+            color: white;
+        }
+    </style>
 </head>
 <body>
+    <div class="topnav">
+        <a class="active" href="#home">Home</a>
+        <a href="../index.html">Methods 2024</a>
+        <a href="../problems/palindrome/Python/bensampson/FrontEnd/index.html">Palindrome</a>
+      </div>
     <h1>Ben Sampson's Page</h1>
     <ul>
-	<li>Will update eventually.</li>
+	<p>
+        Currenly a senior graduating in May. I grew up in Butte, MT and moved to Bozeman to come to MSU in 2019. 
+    </p>
+    <p>
+        Some Hobbies I have are:
+        <ul>
+            <li>Skiing</li>
+            <li>Hiking</li>
+            <li>Fishing</li>
+            <li>Boating</li>
+            <li>Golf</li>
+            <li>Pretty much anything outside</li>
+        </ul>
+    </p>
+
+    <p>
+        This is still pretty barebones but I plan to do more with it once I get more time. 
+    </p>
+
     </ul>
-    <a href="../index.html">Back to Main</a>
 </body>
 </html>

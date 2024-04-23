@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <title>Methods 2024 - Problem - FizzBuzz</title>
+    <script src="https://unpkg.com/htmx.org@1.9.11" integrity="sha384-0gxUXCCR8yv9FM2b+U3FDbsKthCI66oH5IA9fHppQq9DDMHuMauqq1ZHBpJxQ0J0" crossorigin="anonymous"></script>
+</head>
+<body>
+    <h1>Carlee Joppa - Solution - C# - FizzBuzz</h1>
+    <div>
+        <h3>FizzBuzz on the web</h3>
+        <p>How to run in the brower:
+            <ol>
+                <li>in a terminal window run `dotnet run`</li>
+                <li>go to http://localhost:5269 (may be a different local host)</li>
+                <li>enter an integer and click the "Calculate FizzBuzz" button</li>
+            </ol>
+        </p>
+        <br>
+        <form method="post" hx-target="#result" hx-swap="outerHTML"> 
+            <label for="number">Enter a positive integer:</label>
+            <input type="text" name="number" id="number">
+            <button type="submit" hx-post="/fizzbuzz">
+                Calculate FizzBuzz
+            </button>
+        </form>
+
+        <div id="result" hx-swap="outerHTML">
+
+        </div>
+    </div>
+
+    <br>
+    <br>
+
+    <p>How to run FizzBuzz from the command line:
+        <ol>
+            <li>run sh run.sh 17 (or some other number, any integer > 0 will work)</li>
+        </ol>
+    </p>
+    <p>How to run tests:
+        <ol>
+            <li>run `sh test.sh`h</li>
+        </ol>
+    </p>
+    <br>
+
+    <p>
+    Navigation
+    <ul>
+      <li><a href="../../index.html">Back</a></li>
+    </ul>
+    </p>
+</body>
+</html>
