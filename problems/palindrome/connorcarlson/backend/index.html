@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <title>Methods 2024 - Connor Carlson - Palindrome Solution</title>
+</head>
+
+<!-- <script>
+    document.getElementById('palindrome').addEventListener('submit', func());
+
+    function func() {
+        var input = document.getElementById('string').value;
+
+    }
+</script> -->
+
+<body>
+    <h1>Methods 2024 - Problem - Palindrome</h1>
+    <h2>Palindrome Web App Demo</h2>
+    <form id="palindrome" action="/palindrome" method="post">
+        <label for="string">Enter a string:</label><br>
+        <input type="text" id="string" name="string" autocomplete="off"><br>
+        <input type="submit" value="Check">
+    </form>
+    <p id="response"></p>
+    <p>
+        Displayed below is the python code to my solution. Also listed are the other related files to the assignment.
+    </p>
+    <p>
+    <h2>Solution Code:</h2>
+    <pre><code class="Python">
+        import sys
+
+        inp = " ".join(sys.argv[1:])
+
+        def isPalendrome(inp:str, lower:int, upper:int):
+            while not inp[lower].isalnum():
+                lower += 1
+            while not inp[upper].isalnum():
+                upper -= 1
+
+            if upper > lower:
+                if inp[lower] == inp[upper]:
+                    return isPalendrome(inp, lower+1, upper-1)
+                else:
+                    return False
+            else:
+                return True
+            
+        def checkInput(inp:str):
+            temp = inp.lower()
+            if isPalendrome(temp, 0, len(temp)-1):
+                print("\"%s\" is a paledrome!" % inp)
+            else:
+                print("\"%s\" is NOT a plendrome!" % inp)
+
+        checkInput(inp)
+    </code></pre>
+    <h2>Related Files:</h2>
+    <ul>
+      <li><a href="./palindrome.py">Palindrome Solution</a></li>
+      <li><a href="./README.md">Instructions</a></li>
+      <li><a href="./runPalindromeCheck.sh">Shell Script</a></li>
+    </ul>
+    </p>
+    <p>
+    Navigation
+    <ul>
+      <li><a href="../../index.html">Back to Solutions</a></li>
+    </ul>
+    </p>
+</body>
+</html>
