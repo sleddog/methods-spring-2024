@@ -1,5 +1,3 @@
-//package sumprimes2.src.test.java;
-
 import org.junit.Test;
 
 import com.example.sumOfPrimes;
@@ -13,21 +11,18 @@ public class testSumOfPrimes {
         public void test10() {
                 int sum1 = sumOfPrimes.primeSum(10);
                 assertEquals(sum1, 17);
-                //System.out.println("Test 10 passed");
         }
         
         @Test
         public void test50() {
                 int sum2 = sumOfPrimes.primeSum(50);
                 assertEquals(sum2, 328);
-                //System.out.println("Test 50 passed");
         }
 
         @Test
         public void test100() {
                 int sum3 = sumOfPrimes.primeSum(100);
                 assertEquals(sum3, 1060);
-                //System.out.println("Test 100 passed");
         }
 
         @Test
