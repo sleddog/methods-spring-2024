@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>String Input</title>
+</head>
+
+<body>
+    <h1>Unique Characters</h1>
+    <form action="/form" method="POST">
+        <label for="in_string">Enter a string:</label><br>
+        <input type="text" id="in_string" name="in_string" value="{{ in_string }}"><br><br>
+        <input type="submit" value="Submit">
+    </form>
+
+    <div>
+        {% if result is defined %}
+            {% if result %}
+                <p>True</p>
+            {% else %}
+                <p>False</p>
+            {% endif %}
+        {% endif %}
+    </div>
+</body>
+</html>
