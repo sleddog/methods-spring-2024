@@ -1,20 +1,80 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Lukas Bernard</title>
-</head>
-<body>
-    <h1>Lukas Bernard's Page</h1>
-    <ul>
-      <p>My name is Lukas Bernard and I am a senior at Montana State University Bozeman. </p>
-    </ul>
-    <div>
-        <a href="./index.html">Back to Students</a> 
-        <br>
-        <a href="../index.html">Back to Main</a>
+    <style>
+      #content {
+        width: 50%;
+        margin-left: 50px;
+        margin-top: 50px;
+	margin-bottom: 50px;
+        font-family: 'Courier New', monospace;
+      }
+      #header {
+        margin-left: 50px;
+        width: 35%;
+        background-color: #0DAD69;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        border-radius: 5px;
+        border: 5px dotted #1CD083;
+      }
+      #header:hover{
+	background-color: #1CD083;      
+      }
+      h1 {
+        text-align: center;
+        font-family:  'Brush Script MT', cursive;
+      }
+      body {
+        margin: 0px;
+        height: 100%;
+      }
+      .buttoncontainer {
+        background-color: #1CD083;
+	padding: 5px;
+        display: flex;
+	justify-content: center;
+	align-items:center;
+	height:100%;
+	flex-direction:row;
+      }
+      .buttonbox{
+	border: 5px dotted #0DAD69;
+	padding: 15px 15px;
+	background-color: #A3C2B5;
+	cursor: pointer;
+	margin-left: 50px;
+	text-decoration: none;
+	color: white;
+      }
+      .buttonbox:hover{
+	background-color:#e7e7e7;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="header">
+      <h1>Lukas Bernard's Page</h1>
     </div>
-</body>
+    <div id="content">
+      <p>
+        My name is Lukas Bernard and I am a senior at Montana State University
+        Bozeman. Here are some fun things I enjoy to do in town.
+      </p>
+      <ul>
+        <li>Hike</li>
+        <li>Dirtbike</li>
+        <li>Mountain Bike</li>
+        <li>Whitewater Rafting</li>
+        <li>Snowmobile</li>
+      </ul>
+    </div>
+    <div id="buttoncontainer">
+      <a href="./index.html" class="buttonbox">Back to Students</a>
+      <a href="../index.html" class="buttonbox">Back to Main</a>
+    </div>
+  </body>
 </html>

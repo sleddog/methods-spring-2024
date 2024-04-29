@@ -18,6 +18,19 @@
        If there is a problem running the script, you may need to change the "python" call in the run.sh file to "python3".
     </p>
     <p>
+      Alternatively, you can use the form below to run the program. Enter a string, then hit the Check button to get True if the string is unique,
+      and false if it contains repeated characters. 
+    </p>
+
+    <form method="post" action="/unique_string"> 
+      <label for="string">Enter your string here:</label>
+      <input type="text" name="string">
+      <input type="submit" value="Check">
+    </form>
+    {% if answer %}
+    <p>Is the string made of unique characters? {{ answer }}</p>
+    {% endif %}
+    <p>
     Navigation
     <ul>
       <li><a href="../../index.html">Back</a></li>
